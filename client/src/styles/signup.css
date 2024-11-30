@@ -1,0 +1,125 @@
+.signup,
+.login {
+  display: flex;
+  box-shadow: 0px 0px 25px rgb(209, 209, 209), -0px -0px 25px rgb(209, 209, 209);
+}
+
+.form-control {
+  border: none !important;
+  border-bottom: 2px solid rgb(191, 191, 191) !important;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  margin: 0 4px;
+}
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  align-self: start;
+  margin-top: 13px;
+}
+
+label {
+  color: rgb(68, 68, 68);
+  transition: 0.2s;
+}
+input:focus {
+  border-bottom-color: black !important ;
+}
+.form-group:has(input:focus) label {
+  color: black;
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+.parrot-green {
+  color: rgb(119, 171, 89);
+}
+.bg-parrot-green {
+  background-color: rgb(146, 230, 97);
+}
+
+.sideup {
+  background-image: url("../assets//sign-up-bg.jpg");
+}
+.side-up-div {
+  width: 40%;
+}
+.signupform,
+.loginform {
+  width: 60%;
+  background-color: white;
+  padding: 30px 60px;
+}
+.signup-side-bottom-tick-circle {
+  font-size: 90px;
+  background-color: white;
+  border: 1px solid green;
+  transition: 0.2s;
+}
+.password-group {
+  position: relative;
+}
+.password-eye {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+}
+
+/* ------------------------------------ */
+
+@media only screen and (max-width: 997px) {
+  .signupform,
+  .loginform {
+    padding: 100px 50px;
+  }
+  .signup-side-bottom-tick-circle {
+    font-size: 70px;
+    transition: 0.2s;
+  }
+  .sideup div p {
+    font-size: 15px !important;
+  }
+  .sideup div p:first-child {
+    font-size: 50px !important;
+  }
+  .terms-conditions {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 997px) {
+  .signupform,
+  .loginform {
+    padding: 45px 50px;
+  }
+}
+@media only screen and (max-width: 634px) {
+  .signupform,
+  .loginform {
+    padding: 30px 40px;
+  }
+  .signup-side-bottom-tick-circle {
+    font-size: 45px;
+    transition: 0.2s;
+  }
+  .sideup div p:first-child {
+    font-size: 40px !important;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+  .side-up-div {
+    display: none;
+  }
+  .signupform,
+  .loginform {
+    width: 100%;
+  }
+  input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    align-self: start;
+    margin-top: 9px;
+  }
+}
