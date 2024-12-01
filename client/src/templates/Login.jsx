@@ -1,10 +1,13 @@
+import { Helmet } from "react-helmet";
 import LoginForm from "../components/LoginForm";
 import Sideup from "../components/Sideup";
 
 export default function Login() {
   return (
     <div className="container-md d-flex justify-content-center align-items-center" style={{height:"720px"}}>
-
+<Helmet>
+        <title>Log in</title>
+      </Helmet>
       <div className="login m-5" style={{height:'70%'}}>
         <LoginForm />
         <div className="side-up-div">

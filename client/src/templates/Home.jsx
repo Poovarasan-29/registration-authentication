@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const [userData, setUserData] = useState();
@@ -30,6 +31,9 @@ export default function Home() {
 
   return (
     <div style={{ width: "100%", height: "100vh" }}>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       {sessionExpiredMessage && (
         <div
           className="sessionExpiredMessage bg-primary p-3"

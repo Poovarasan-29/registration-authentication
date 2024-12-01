@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { setCheckAllowToResetPassword } from "../slice/checkAllowToResetPasswordSlice";
+import { Helmet } from "react-helmet";
 export default function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [OTP, setOTP] = useState("");
@@ -128,6 +129,9 @@ export default function ForgotPassword() {
         height: "720px",
       }}
     >
+      <Helmet>
+        <title>Forgot password</title>
+      </Helmet>
       <div className="login p-4 d-flex rounded flex-column">
         <h2 className="mb-4">Forgot Password</h2>
         <form onSubmit={handleFormSubmit} method="POST">

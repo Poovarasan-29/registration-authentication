@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -211,6 +212,9 @@ export default function ResetNewPassword() {
         height: "720px",
       }}
     >
+      <Helmet>
+        <title>Create New Password</title>
+      </Helmet>
       <div className="login p-4 d-flex rounded flex-column">
         <h2 className="mb-4">Create New Password</h2>
         <form method="POST" onSubmit={handleFormSubmit}>
