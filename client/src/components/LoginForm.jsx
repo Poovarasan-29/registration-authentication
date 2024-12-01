@@ -53,6 +53,7 @@ export default function LoginForm() {
     }
   }
 
+
   return (
     <div className="loginform d-flex align-items-center">
       <form onSubmit={handleFormSubmit}>
@@ -96,7 +97,7 @@ export default function LoginForm() {
         </div>
         <div className="mb-3">
           <small className="d-flex flex-row-reverse">
-            <Link>Forgot password?</Link>
+            <Link to={'/forgot-password'}>Forgot password?</Link>
           </small>
         </div>
         <div className="mb-3">

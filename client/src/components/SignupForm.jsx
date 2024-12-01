@@ -34,7 +34,7 @@ export default function SignupForm() {
 
     switch (key) {
       case "email":
-        const regex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!regex.test(value) && value.length !== 0) {
           setUserValueErrors((pre) => {
             return { ...pre, email: "e.g., example@gmail.com" };

@@ -8,6 +8,7 @@ const cors = require("cors");
 const registerationRouter = require("./routes/userRegistrationRoute");
 const loginRouter = require("./routes/userLoginRoute");
 const getUserHomeDetailsRouter = require("./routes/getUserHomeDetails");
+const resetPasswordRouter = require("./routes/resetPasswordRoute");
 
 //Database Connection
 ConnectDatabase();
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(registerationRouter);
 app.use(loginRouter);
 app.use(getUserHomeDetailsRouter);
+app.use(resetPasswordRouter);
 
 app.listen(PORT, () => {
   console.log("Server Running at port ", PORT);

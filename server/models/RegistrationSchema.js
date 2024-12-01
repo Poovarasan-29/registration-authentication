@@ -13,7 +13,8 @@ const RegistrationSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-
+  resetPasswordOTP: String,
+  resetPasswordExpiry: Date,
 });
 
 module.exports = mongoose.model("UserRegistration", RegistrationSchema);

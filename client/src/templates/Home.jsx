@@ -17,7 +17,6 @@ export default function Home() {
         .then((res) => setUserData(res.data));
     }
   }, []);
-  console.log(userData);
 
   function handleLogout() {
     for (let i = 0; i < localStorage.length; i++) {
